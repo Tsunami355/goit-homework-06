@@ -1,0 +1,107 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .feature-list {
+        gap: 24px;
+        row-gap: 72px;
+    }
+
+    .feature-subtitle {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .feature-item {
+        width: calc((100% - 24px) /2);
+    }
+
+    .team-list {
+        gap: 24px;
+        row-gap: 64px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .customers-list {
+        gap: 24px;
+    }
+
+    .customers-item {
+        width: 168px;
+        width: calc((100%-48px)/3);
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .feature {
+        padding: 120px 0;
+    }
+
+    .feature-subtitle {
+        font-weight: 500;
+    }
+
+    .feature-item {
+        width: calc((100% - 24px*3) /4);
+    }
+
+    .feature-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-item-text {
+        font-weight: 400;
+    }
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-list {
+        gap: 24px;
+        padding: 0;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .team-socials-link:is(:hover, :focus) {
+        background-color: #404bbf;
+    }
+
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-item {
+        width: calc((100%-24px)/6);
+    }
+
+    .customers-link:is(:hover, :focus) {
+        border-color: #404BBF;
+        color: #404BBF;
+    }
+}
