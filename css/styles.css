@@ -34,7 +34,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -250,9 +249,7 @@ body {
 
 .feature {
     background: var(--main-text-color);
-    /*padding: 120px 0;*/
     padding: 96px 0;
-
 }
 
 .feature-container {
@@ -263,8 +260,7 @@ body {
 
 .feature-list {
     display: flex;
-    flex-direction: column;
-    /*gap: 24px;*/
+    flex-Wrap: wrap;
     gap: 72px;
 }
 
@@ -278,8 +274,6 @@ body {
 
 .feature-item {
     width: 100%;
-    
-    /*width: calc((100% - 24px*3) /4);*/
 }
 
 .feature-block {
@@ -289,15 +283,11 @@ body {
     background: var(--cloud, #F4F4FD);
     margin-bottom: 8px;
     border-radius: 4px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 .feature-item-text {
     color: var(--second-text-color);
     font-size: 16px;
-    /*font-weight: 400;*/
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -952,4 +942,56 @@ body {
     .container{
         max-width: 428px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+        .feature-list{
+        gap: 24px;
+        row-gap: 72px;
+        }
+
+                .feature-subtitle{
+                    text-align: left;
+                    font-size: 20px;
+                }
+
+                .feature-item{
+                width: calc((100% - 24px) /2);
+                }
+                 
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+        .feature{
+            padding: 120px 0;
+        }
+
+                .feature-list{
+
+                }
+
+                                .feature-subtitle{
+                                    font-weight: 500;
+                                }
+                                .feature-item{
+                            width: calc((100% - 24px*3) /4);
+                                }
+                     
+                                                                .feature-block{
+                                                                display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                }
+
+                                                                                                           .feature-item-text{
+                                                                                                            font-weight: 400;
+                                                                                                           }
 }
