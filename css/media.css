@@ -41,7 +41,37 @@
         width: calc((100%-48px)/3);
     }
 
+.footer{display: flex;
+    justify-content: space-between;}
 
+ .footer-conteiner {
+     align-items: baseline;
+     flex-direction: row;
+     gap: 24px;
+   
+ }
+
+ .footer-logo-container {
+     text-align: left;
+    
+ }
+
+
+.footer-form{
+flex-direction: row;
+}
+
+ .sociallink-text {
+     text-align: left;
+ }
+
+.footer-modal{
+    display: block;
+}
+
+ .footer-modal-text {
+     text-align: left;
+ }
 
 }
 
@@ -104,4 +134,43 @@
         border-color: #404BBF;
         color: #404BBF;
     }
+
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer-conteiner {
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .footer-logo-container {
+        margin-right: 120px;
+        text-align: left;
+    }
+
+    .footer-socials-link {
+        margin-right: 80px;
+    }
+
+    .footer-socials-link:is(:hover, :focus) {
+        background-color: #31D0AA;
+    }
+
+   
+
+    .footer-form {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+        .footer-form-btn{
+        padding: 8px 24px;
+            
+        }
 }
