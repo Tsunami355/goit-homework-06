@@ -200,6 +200,15 @@ body {
     background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob-2x.jpg);
+    }
+}
+
+
 .hero-container {
     display: flex;
     justify-content: center;
@@ -469,7 +478,7 @@ padding-right: 67px;
 }
 
 .footer-logo-container {
-    display: block;
+    display: column;
     text-align: center;
     /*margin-right: 120px;*/
        margin-bottom: 72px;
