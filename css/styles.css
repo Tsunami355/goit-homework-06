@@ -62,7 +62,7 @@ body {
     list-style-type: none;
 }
 
-.no-scroll{
+.no-scroll {
     overflow: hidden;
 }
 
@@ -124,15 +124,13 @@ body {
 .header-logo-accent {
     color: var(--accent-color);
 }
-  
 
-
-
-.header-menu, .header-address-list{
-display: none;
+.header-menu,
+.header-address-list {
+    display: none;
 }
 
-.header-open-btn{
+.header-open-btn {
     border: none;
     background-color: transparent;
 }
@@ -143,18 +141,18 @@ display: none;
     left: 0;
     width: 100vw;
     height: 100vh;
-z-index: 2;
-padding: 24px 35px 40px 40px;
+    z-index: 2;
+    padding: 24px 35px 40px 40px;
     background: var(--white, #FFF);
-        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-       
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.subcontainer-mob-menu{
-margin-top: auto;
+.subcontainer-mob-menu {
+    margin-top: auto;
 }
 
 .header-close-btn {
@@ -166,7 +164,7 @@ margin-top: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+
     /*
     display: flex;
     align-items: center;
@@ -176,69 +174,62 @@ margin-top: auto;
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50%;}*/}
-
-.header-close-icon {
-    
+    border-radius: 50%;}*/
 }
+
+
 
 .mob-menu {
     margin-bottom: 50px;
 }
 
 .mob-menu-item:not(:last-child) {
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .mob-menu-link {
     color: var(--navyblue, #2E2F42);
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 
 .mob-address-item {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 
 
 .mob-address-tel {
     color: var(--iris, #4D5AE5);
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        max-width: 353px;
-        width:100%;
-        
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    max-width: 353px;
+    width: 100%;
 }
 
 .mob-address-email {
-color: var(--slate, #434455);
+    color: var(--slate, #434455);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
-
-
 .mob-socials-list {
     display: flex;
     gap: 56px;
     justify-content: center;
-    
 }
 
 .mob-socials-item {
     width: 40px;
     height: 40px;
-
-    
 }
 
 .mob-socials-link {
@@ -270,8 +261,8 @@ color: var(--slate, #434455);
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
-(min-resolution: 2dppx){
-    .hero{
+(min-resolution: 2dppx) {
+    .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob-2x.jpg);
     }
 }
@@ -328,7 +319,7 @@ color: var(--slate, #434455);
 .feature {
     background: var(--main-text-color);
     padding-top: 96px;
-   
+
 }
 
 .feature-container {
@@ -376,24 +367,10 @@ color: var(--slate, #434455);
 /*-----------PRODUCT------------*/
 
 .product {
-    background: var(--main-text-color);
-    padding-bottom: 120px;
+    display: none;
+   
 }
 
-.product-title {
-    margin: 0 auto;
-    margin-bottom: 72px;
-}
-
-.product-list {
-    display: flex;
-    gap: 24px;
-    height: auto;
-}
-
-.product-item {
-    width: calc((100% - 48px) /3);
-}
 
 
 /*-----------TEAM------------*/
@@ -422,7 +399,7 @@ color: var(--slate, #434455);
     flex-Wrap: wrap;
     gap: 72px;
     padding-left: 67px;
-padding-right: 67px;
+    padding-right: 67px;
 }
 
 .team-item {
@@ -432,7 +409,7 @@ padding-right: 67px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-img{
+.team-img {
     max-width: 100%;
 }
 
@@ -482,7 +459,7 @@ padding-right: 67px;
 /*----------------CUSTOMERS---------------*/
 
 .customers {
-    padding: 96px 0; 
+    padding: 96px 0;
     background: var(--main-text-color);
 }
 
@@ -537,7 +514,7 @@ padding-right: 67px;
     padding: 96px 0;
 }
 
-.footer-conteiner{
+.footer-conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -549,9 +526,9 @@ padding-right: 67px;
     display: column;
     text-align: center;
     /*margin-right: 120px;*/
-       margin-bottom: 72px;
-    
-       
+    margin-bottom: 72px;
+
+
 }
 
 .footer-logo {
@@ -567,7 +544,7 @@ padding-right: 67px;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
-  
+
 }
 
 .footer-logo-accent {
@@ -582,16 +559,16 @@ padding-right: 67px;
     /* 24/16 */
     letter-spacing: 0.02em;
     /*width: 264px;*/
-text-align: left;
+    text-align: left;
     max-width: 268px;
-width: 100%;
+    width: 100%;
 
 
 }
 
 .footer-sociallink {
-   /* margin-right: 80px;*/
-   margin-bottom: 72px;
+    /* margin-right: 80px;*/
+    margin-bottom: 72px;
 }
 
 .sociallink-text {
@@ -613,7 +590,7 @@ width: 100%;
 .footer-socials-item {
     width: 40px;
     height: 40px;
-   
+
 }
 
 .footer-socials-link {
@@ -651,7 +628,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
-   
+
 }
 
 .footer-input {
@@ -667,7 +644,7 @@ width: 100%;
     font-size: 12px;
     letter-spacing: 0.04em;
     line-height: 1.5;
-   
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -685,12 +662,12 @@ width: 100%;
     letter-spacing: 0.04em;
     display: inline-flex;
     width: 165px;
-   
+
     font-weight: 500;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
 
 .footer-modal-icon {
@@ -1052,6 +1029,3 @@ width: 100%;
     line-height: 1.33;
     text-decoration-line: underline;
 }
-
-
-
