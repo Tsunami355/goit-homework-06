@@ -263,24 +263,26 @@
         font-weight: 400;
     }
 
-    .team {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        max-width: 1128px;
 
-    }
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-    .team-list {
-        gap: 24px;
-        padding: 0;
-    }
+.team-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    padding: 0;
+    max-width: 1128px;
+}
+
+.team-socials-link:is(:hover, :focus) {
+    background-color: #404bbf;
+}
 
     .team-item {
         width: calc((100% - 72px) / 4);
-    }
-
-    .team-socials-link:is(:hover, :focus) {
-        background-color: #404bbf;
     }
 
     .product {
