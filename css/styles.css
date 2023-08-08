@@ -151,36 +151,39 @@ body {
 
 }
 
-.subcontainer-mob-menu {
-    margin-top: auto;
-}
+/*.subcontainer-mob-menu {
+    display: block;
+}*/
 
 .header-close-btn {
-    display: block;
-    margin-left: auto;
-    margin-bottom: 32px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    /*
+background: transparent;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #e7e9fc;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50%;}*/
+   
+ 
 }
 
-
+.once-mob-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 .mob-menu {
-    margin-bottom: 50px;
+    margin-top: 32px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -196,6 +199,9 @@ body {
     text-transform: capitalize;
 }
 
+.mob-adress-list{
+    
+}
 
 .mob-address-item {
     margin-bottom: 40px;
@@ -225,6 +231,7 @@ body {
     display: flex;
     gap: 56px;
     justify-content: center;
+   
 }
 
 .mob-socials-item {
@@ -318,7 +325,7 @@ body {
 
 .feature {
     background: var(--main-text-color);
-    padding-top: 96px;
+    padding: 96px 0;
 
 }
 
@@ -517,7 +524,7 @@ body {
 .footer-conteiner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 
 }
@@ -625,8 +632,8 @@ body {
 }
 
 .footer-input {
-    max-width: 398px;
-    width: 100%;
+    width: 398px;
+    
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
@@ -953,6 +960,7 @@ body {
 
 .modal-form-btn {
     display: block;
+    margin: 0 auto;
     color: var(--white, #FFF);
     min-width: 169px;
     font-weight: 500;
@@ -961,7 +969,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    transform: translateX(55%);
+    /*transform: translateX(55%);*/
     border-radius: 4px;
     border: none;
     cursor: pointer;
